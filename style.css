@@ -1,0 +1,122 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(120deg, #6c7c8b 50%, #b7c6ae 50%);
+  color: #333;
+}
+
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+h1 {
+  color: white;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.logo {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.logo .fundo {
+  font-size: 40px;
+  font-weight: bold;
+  color: #b7c6ae;
+}
+
+.logo .sobre {
+  position: absolute;
+  top: 14px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-family: 'Brush Script MT', cursive;
+  font-size: 28px;
+}
+
+.form-box {
+  background-color: #b7c6ae;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 1px 3px 10px #444;
+  margin-bottom: 30px;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  background: #f2f2f2;
+  padding: 10px;
+  border-radius: 12px;
+  justify-content: space-between;
+}
+
+.input-group input {
+  border: none;
+  background: transparent;
+  outline: none;
+  font-size: 16px;
+  flex: 1;
+}
+
+.icon {
+  margin-left: 10px;
+  font-size: 18px;
+}
+
+button {
+  margin-top: 15px;
+  padding: 10px 30px;
+  font-size: 16px;
+  background-color: #93b89b;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.texto-info {
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.texto-info h2 {
+  color: #5b7162;
+  font-size: 20px;
+}
+
+.texto-info p {
+  font-size: 14px;
+  color: #444;
+  line-height: 1.6;
+}
+
+button {
+  margin-top: 15px;
+  padding: 10px 30px;
+  font-size: 16px;
+  background-color: #93b89b;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button:active {
+  background-color: #7ba684;
+}
+
+.texto-info {
+  box-shadow: 1px 3px 10px #444;
+}
