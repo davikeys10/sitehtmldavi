@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #202020;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(120deg, #6c7c8b 50%, #b7c6ae 50%);
+  color: #333;
+}
+
+form {
+  display: flex;
+
+  flex-direction: column;
+  width: 400px;
+  background-color: #b7c6ae;
+  border-radius: 16px;
+  box-shadow: 1px 3px 10px #202020;
+  padding: 1.5rem 40px;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: rgb(255, 255, 255);
+}
+
+label {
+  margin-bottom: .2rem;
+  position: relative;
+  color: #3b3f42;
+}
+
+label:not(:first-of-type){
+  margin-top: 1rem;
+}
+
+input {
+  padding: .2rem .5rem;
+  border-radius: 5px;
+  border: 0;
+  height: 30px;
+}
+
+.helper-text {
+  display: none;
+  font-size: .8rem;
+  color: darkred;
+}
+
+button {
+  width: 100px;
+  height: 40px;
+  margin-top: 1.5rem;
+  font-size: 1rem;
+  align-self: center;
+  background-color: #7ca083;
+  border: black;
+  border-radius: 5px;
+  font-weight: 600;
+  color: white;
+}
+
+/* ---------- Estilos dinâmicos ---------- */
+.required-popup::after {
+  content: "*Campo obrigatório";
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #DFDFDF;
+  font-size: .65rem;
+  padding: .2rem .3rem;
+  width: auto;
+  display: block;
+  background-color: #202020;
+}
+
+input.error {
+  border: solid 2px #992020;
+  background-color: #CCBBBB;
+  color: #662020;
+}
+
+input.correct {
+  background-color: #BBCCBB;
+  border: solid 2px #206620;
+  color: #206620;
+}
+
+.visible {
+  display: block;
+}
