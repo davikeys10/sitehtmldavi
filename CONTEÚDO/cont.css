@@ -117,3 +117,33 @@ main {
 .btn-proximo a:hover {
   background-color: #586977;
 }
+
+.escondido {
+  display: none;
+}
+
+.info-extra {
+  margin-top: 10px;
+  font-size: 13px;
+  color: #555;
+}
+
+.btn-ver-mais {
+  display: inline-block;
+  background-color: #6c7c8b;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+  font-size: 14px;
+}
+
+.btn-ver-mais:hover {
+  background-color: #586977;
+  transform: scale(1.03);
+}
