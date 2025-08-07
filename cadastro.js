@@ -1,17 +1,18 @@
-
+// ---------- VALIDAÇÃO USERNAME ---------- //
+let usernameInput = document.getElementById("username");
+let usernameLabel = document.querySelector('label[for="username"]');
 let usernameHelper = document.getElementById("username-helper");
-let buttonEntrar = document.querySelector("button");
 
 function mostrarPopup(input, label) { 
 
 // Mostrar popup de campo obrigatório
-    input.addEventListener("focus", () => {
-    label.classList.add("required-popup")
+    usernameInput.addEventListener("focus", () => {
+    usernameLabel.classList.add("required-popup")
 })
 
 // Ocultar popup de campo obrigatório
-    input.addEventListener("blur", () => {
-    label.classList.remove("required-popup")
+    usernameInput.addEventListener("blur", () => {
+    usernameLabel.classList.remove("required-popup")
 })
 }
 mostrarPopup(usernameInput, usernameLabel)
@@ -55,8 +56,3 @@ userEmailInput.addEventListener("input", (e) => {
     }
     }
 )
-
-buttonEntrar.addEventListener("submit", (e)=>{
-    e.preventDefault()
-    window.location.href='CONTEUDO/cont.html'
-})
